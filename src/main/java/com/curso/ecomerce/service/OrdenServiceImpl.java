@@ -1,5 +1,7 @@
 package com.curso.ecomerce.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -15,6 +17,16 @@ public class OrdenServiceImpl implements IOrdenService{
 	@Override
 	public Orden save(Orden orden) {
 		return ordenRepository.save(orden);
+	}
+
+	@Override
+	public List<Orden> findAll() {
+		return ordenRepository.findAll();
+	}
+	
+	public String generarNumeroOrden() {
+		
+		return "";
 	}
 
 }
