@@ -1,5 +1,6 @@
 package com.curso.ecomerce.service;
 
+import java.util.List;
 import java.util.Optional;
 
 import com.curso.ecomerce.model.Usuario;
@@ -10,5 +11,7 @@ public interface IUsuarioService {
 	Usuario save(Usuario usuario);
 	
 	Optional<Usuario> findByEmail(String email);
+	
+	List<Usuario> findAll();
 
 }
