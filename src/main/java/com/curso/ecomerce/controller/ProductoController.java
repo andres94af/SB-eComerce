@@ -19,7 +19,6 @@ import com.curso.ecomerce.model.Usuario;
 import com.curso.ecomerce.service.IUsuarioService;
 import com.curso.ecomerce.service.ProductoService;
 import com.curso.ecomerce.service.UploadFileService;
-import com.curso.ecomerce.service.UsuarioServiceImpl;
 
 import jakarta.servlet.http.HttpSession;
 
