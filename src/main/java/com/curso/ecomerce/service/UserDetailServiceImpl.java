@@ -40,7 +40,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
 			Usuario usuario = optionalUser.get();
 			return User.builder()
 					.username(usuario.getNombre())
-					.password(bCrypt.encode(usuario.getPassword()))
+					.password(usuario.getPassword())
 					.roles(usuario.getTipo())
 					.build();
 		}else {
