@@ -21,10 +21,7 @@ public class SpringBootSecurity {
   		.requestMatchers("/productos/**").hasRole("ADMIN")
   		.and().formLogin().loginPage("/usuario/login")
   		.permitAll().defaultSuccessUrl("/usuario/acceder");
-
+  	
 		return http.build();
   }
-  
-  
-	
 }

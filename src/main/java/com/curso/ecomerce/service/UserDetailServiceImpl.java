@@ -9,7 +9,6 @@ import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.curso.ecomerce.model.Usuario;
@@ -23,10 +22,7 @@ public class UserDetailServiceImpl implements UserDetailsService {
 	private IUsuarioService usuarioService;
 	
 	@Autowired
-	private BCryptPasswordEncoder bCrypt;
-	
-	@Autowired
-	HttpSession session;
+	public HttpSession session;
 	
 	private Logger log = LoggerFactory.getLogger(getClass());
 	
